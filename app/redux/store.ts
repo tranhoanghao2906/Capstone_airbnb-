@@ -1,8 +1,9 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import locationSlice from "./slices/location.slice";
-
+import loadingSlice from "./slices/loading.slice";
 const rootReducer = combineReducers({
   location: locationSlice,
+  loading: loadingSlice
 });
 
 export const store = configureStore({

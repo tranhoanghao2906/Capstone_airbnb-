@@ -26,6 +26,7 @@ const Location = () => {
 
   const renderRooms = () => {
     return listRooms.map((item: TRoom) => {
+      console.log(item)
       return (
         <div key={item.id} className="p-1 rounded-lg">
           <img
